@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Career Camp Interview App</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/students/list">Student List</a></li>
+      <li><a href="/interviews/list">Interview List</a></li>
+      <li><a href="/results/list">Result List</a></li>
+      <li><a href="/auth/signout">Sign Out</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <h1>Add New Student</h1>
+    <form action="/students/add" method="POST">
+      <label for="batch">Batch:</label>
+      <input type="text" id="batch" name="batch" required>
+      
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+      
+      <label for="college">College:</label>
+      <input type="text" id="college" name="college" required>
+      
+      <label for="status">Status:</label>
+      <select id="status" name="status" required>
+        <option value="placed">Placed</option>
+        <option value="not_placed">Not Placed</option>
+      </select>
+      
+      <label for="dsaScore">DSA Final Score:</label>
+      <input type="number" id="dsaScore" name="dsaScore" required>
+      
+      <label for="webdScore">WebD Final Score:</label>
+      <input type="number" id="webdScore" name="webdScore" required>
+      
+      <label for="reactScore">React Final Score:</label>
+      <input type="number" id="reactScore" name="reactScore" required>
+      
+      <button type="submit">Add Student</button>
+    </form>
+  </main>
+</body>
+</html>
